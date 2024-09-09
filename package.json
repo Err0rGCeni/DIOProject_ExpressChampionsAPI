@@ -1,0 +1,33 @@
+{
+  "name": "champions_league",
+  "version": "1.0.0",
+  "description": "API with NodeJS & Express",
+  "main": "dist/server.js",
+  "scripts": {
+    "dist": "tsup src --clean",
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start:watch": "tsx watch --env-file=.env src/server.ts",
+    "start:dist": "npm run dist && node dist/src/server.js"
+  },
+  "keywords": [
+    "TypeScript",
+    "Express",
+    "Node.js",
+    "API",
+    "Football",
+    "Soccer"
+  ],
+  "author": "GCeni",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "tsup": "^8.2.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
